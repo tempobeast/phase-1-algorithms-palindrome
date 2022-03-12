@@ -1,5 +1,10 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reverseString = word.split("").reverse().join("")
+    if (word === reverseString) {
+      return true
+    } else {
+      return false
+    }
 }
 
 /* 
@@ -7,8 +12,10 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
-*/
+  take string
+  reverse string
+  compare string
+*/ 
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
